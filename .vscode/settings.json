@@ -1,4 +1,5 @@
 {
   "prettier.enable": true,
-  "prettier.enableDebugLogs": true
+  "prettier.enableDebugLogs": true,
+  "files.autoSave": "afterDelay"
 }

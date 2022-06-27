@@ -524,6 +524,26 @@ img {
   background-color: var(--accent-color);
   fill: #ffffff;
 }
+.footer-form{
+  margin-left: 93px;
+}
+.footer-form-text{
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.icon-footer{
+  margin-left: 10px;
+}
+
+
+
+
+
 
 /* -----------------portfolio----------------- */
 .main-portfolio {
@@ -729,37 +749,33 @@ img {
 .form-fild textarea:focus {
   border: 1px solid var(--accent-color);
 }
-input:not(:placeholder-shown):not(:focus):valil {
-  border: 1px solid greenyellow;
-}
-input:not(:placeholder-shown):not(:focus):invalil {
-  border: 1px solid rgba(255, 47, 57, 0.486);
-}
 
 .form-fild label {
   margin-bottom: 4px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+
   color: #757575;
 }
 .form-fild textarea {
-  resize: none;
   margin-bottom: 20px;
+
   height: 120px;
+  outline: none;
+  resize: none;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: none;
 }
-.checkbox {
-  /* appearance: none; */
-  margin-bottom: 30px;
-}
+
 .comment {
   padding: 12px 16px;
 }
 textarea::placeholder {
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -768,6 +784,7 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 .check {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -775,6 +792,7 @@ textarea::placeholder {
 }
 .topic-text {
   margin-left: 8px;
+  margin-bottom: 30px;
 
   font-weight: 400;
   font-size: 14px;
@@ -789,13 +807,27 @@ textarea::placeholder {
 .icon-check {
   display: inline-block;
   width: 16px;
-  height: 15px;
-
+  height: 16px;
+  top: 3px;
+ 
   border: 2px solid #212121;
+  border-radius: 2px;
+}
+.checkbox:checked + .icon-check{
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url('../images/icon\ check.svg');
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox {
+  appearance: none;
 }
 .form-btn {
   margin: auto;
   padding: 10px 55px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -813,8 +845,8 @@ textarea::placeholder {
   position: absolute;
   top: 29px;
   left: 15px;
+  z-index: -1;
 }
-
 .form-fild input:hover + .icon-form,
 .form-fild input:focus + .icon-form {
   fill: var(--accent-color);
