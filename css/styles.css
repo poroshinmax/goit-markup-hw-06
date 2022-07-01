@@ -811,8 +811,8 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .form-fild input:focus,
 .form-fild input:hover,
-.form-fild textarea:hover,
-.form-fild textarea:focus {
+.input-wrap textarea:hover,
+.input-wrap textarea:focus {
   border: 1px solid var(--accent-color);
 }
 
