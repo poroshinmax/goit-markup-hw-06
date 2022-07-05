@@ -752,6 +752,11 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 .modal-close-btn:focus .icon-close {
   fill: var(--accent-color);
 }
+.modal-close-btn:focus,
+.modal-close-btn:hover{
+  border: 2px solid var(--accent-color);
+  outline: none;
+}
 
 .is-hidden {
   opacity: 0;
@@ -816,7 +821,8 @@ border: 1px solid rgba(0, 0, 0, 0.1);
   border: 1px solid var(--accent-color);
 }
 
-.form-fild label {
+.form-fild label,
+.input-wrap label {
   margin-bottom: 4px;
 
   font-weight: 400;
